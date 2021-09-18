@@ -42,6 +42,7 @@ Supposing that the Python environment is ready and PostgreSQL is already install
 Notes:
 
 - The `db_preparation.py` script creates two databases (one for each dataset) in the local Postgres installation and loads the data in tables (one for each database) to be ready for querying.
+- Make sure that the directory where the zip files are stored will be accessible by Postgres, or `psycopg2.errors.InsufficientPrivilege` error may be thrown by the script.
 - After running this command, if you want to run it again make sure that the directory with the zip files contains nothing but the zip files, and also run the `post_cleanup.py` script once.
 
 
