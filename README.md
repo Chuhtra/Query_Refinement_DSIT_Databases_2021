@@ -41,8 +41,8 @@ Supposing that the Python environment is ready and PostgreSQL is already install
 
 Notes:
 
-- If for any case you run this command, if you want to run it again make sure that the directory with the zip files contains nothing but the zip files, and also run the `post_cleanup.py` script once.
 - The `db_preparation.py` script creates two databases (one for each dataset) in the local Postgres installation and loads the data in tables (one for each database) to be ready for querying.
+- After running this command, if you want to run it again make sure that the directory with the zip files contains nothing but the zip files, and also run the `post_cleanup.py` script once.
 
 
 # How to use
@@ -90,7 +90,7 @@ The `scalability_experiment_*.py` files are used to run the repeated refined que
 
 # Environment cleanup
 
-To undo all the steps documented above simply do take these steps:
+To undo all the steps documented above simply take these steps:
 
 - Run `python3 post_cleanup.py` script to undo the database creations of the `db_preparation.py` script.
 - Run `deactivate` to deactivate the virtual environment.
