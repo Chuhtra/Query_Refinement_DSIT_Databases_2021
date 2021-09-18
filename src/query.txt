@@ -1,0 +1,4 @@
+SELECT time_id, offset IN_DOMAIN [300, 500], [10, 50]
+FROM emg_data.emg1
+WHERE avg_amp() in [1, 2] MAX
+LIMIT REFINED 5
